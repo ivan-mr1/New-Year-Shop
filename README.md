@@ -6,7 +6,7 @@
 
 - Design: [link](https://www.figma.com/design/zTB01BwWZVoXYK5atH3eZT/Christmas-Shop?node-id=0-1&p=f)
 
-- Deploy: [link](https://ivan1986mrpl.github.io/New-Year-Shop/dist/)
+- Deploy: [link](https://ivan-mr1.github.io/New-Year-Shop/dist/)
 
 - Technologies: HTML, SCSS, Javascript, Vite, Eslint, Stylelint, Prettier
 
