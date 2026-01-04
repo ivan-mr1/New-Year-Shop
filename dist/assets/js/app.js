@@ -6,7 +6,7 @@ var A=Object.defineProperty;var M=(n,t,e)=>t in n?A(n,t,{enumerable:!0,configura
         <article class="card">
           <div class="card__image">
             <img 
-              src="img/third-best/${c}.png"
+              src="assets/img/third-best/${c}.png"
               width="310"
               height="230"
               alt="gift"
@@ -28,7 +28,7 @@ var A=Object.defineProperty;var M=(n,t,e)=>t in n?A(n,t,{enumerable:!0,configura
         <article class="card">
           <div class="card__image">
             <img 
-              src="img/third-best/${a}.png" 
+              src="assets/img/third-best/${a}.png" 
               width="310" 
               height="230" 
               alt="gift" 
@@ -42,4 +42,4 @@ var A=Object.defineProperty;var M=(n,t,e)=>t in n?A(n,t,{enumerable:!0,configura
           </div>
         </article>
       </a>
-    `,t.appendChild(s)})}function Y(n){var a,c,l,p;const t=document.querySelectorAll("[data-js-tabs-content]"),e=(a=t[0])==null?void 0:a.querySelector(".gifts__list"),r=(c=t[1])==null?void 0:c.querySelector(".gifts__list"),s=(l=t[2])==null?void 0:l.querySelector(".gifts__list"),o=(p=t[3])==null?void 0:p.querySelector(".gifts__list");!e||!r||!s||!o||([e,r,s,o].forEach(i=>{i.innerHTML=""}),L(n,e),L(n.filter(i=>i.category.toLowerCase()==="for work"),r),L(n.filter(i=>i.category.toLowerCase()==="for health"),s),L(n.filter(i=>i.category.toLowerCase()==="for harmony"),o))}function J(n){const t=document.querySelector(".popup");if(!t)return;const e=t.querySelector(".popup-card__title"),r=t.querySelector(".popup-card__subtitle"),s=t.querySelector(".popup-card__description p"),o=t.querySelector(".popup-card__img");document.body.addEventListener("click",a=>{const c=a.target.closest(".popup-link");if(!c)return;const l=c.dataset.productId,p=c.dataset.imgIndex,i=n.find(d=>d.id===l);i&&(e.textContent=i.name,r.textContent=i.category,r.className=`popup-card__subtitle ${C(i.category)}`,s.textContent=i.description,o.src=`img/third-best/${p}.png`)})}window.addEventListener("DOMContentLoaded",()=>{K(".countdown","1 January 2027 00:00","The timer is over"),j(),P({offset:300,maxWidth:768}),G(),new R,N(),X(_),Y(_),J(_)});
+    `,t.appendChild(s)})}function Y(n){var a,c,l,p;const t=document.querySelectorAll("[data-js-tabs-content]"),e=(a=t[0])==null?void 0:a.querySelector(".gifts__list"),r=(c=t[1])==null?void 0:c.querySelector(".gifts__list"),s=(l=t[2])==null?void 0:l.querySelector(".gifts__list"),o=(p=t[3])==null?void 0:p.querySelector(".gifts__list");!e||!r||!s||!o||([e,r,s,o].forEach(i=>{i.innerHTML=""}),L(n,e),L(n.filter(i=>i.category.toLowerCase()==="for work"),r),L(n.filter(i=>i.category.toLowerCase()==="for health"),s),L(n.filter(i=>i.category.toLowerCase()==="for harmony"),o))}function J(n){const t=document.querySelector(".popup");if(!t)return;const e=t.querySelector(".popup-card__title"),r=t.querySelector(".popup-card__subtitle"),s=t.querySelector(".popup-card__description p"),o=t.querySelector(".popup-card__img");document.body.addEventListener("click",a=>{const c=a.target.closest(".popup-link");if(!c)return;const l=c.dataset.productId,p=c.dataset.imgIndex,i=n.find(d=>d.id===l);i&&(e.textContent=i.name,r.textContent=i.category,r.className=`popup-card__subtitle ${C(i.category)}`,s.textContent=i.description,o.src=`assets/img/third-best/${p}.png`)})}window.addEventListener("DOMContentLoaded",()=>{K(".countdown","1 January 2027 00:00","The timer is over"),j(),P({offset:300,maxWidth:768}),G(),new R,N(),X(_),Y(_),J(_)});
