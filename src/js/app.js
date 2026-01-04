@@ -12,7 +12,7 @@ import renderProductsInTabs from './shop/renderProductsInTabs.js';
 import setupGiftModal from './shop/setupGiftModal.js';
 
 window.addEventListener('DOMContentLoaded', () => {
-  initCountdown('.countdown', '1 January 2026 00:00', 'The timer is over');
+  initCountdown('.countdown', '1 January 2027 00:00', 'The timer is over');
   popup();
   scrollUp({
     offset: 300,

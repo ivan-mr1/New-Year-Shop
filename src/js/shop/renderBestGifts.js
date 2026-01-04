@@ -29,7 +29,7 @@ function renderBestGifts(products) {
         <article class="card">
           <div class="card__image">
             <img 
-              src="assets/img/third-best/${imgIndex}.png"
+              src="img/third-best/${imgIndex}.png"
               width="310"
               height="230"
               alt="gift"

@@ -25,7 +25,11 @@ export default function initCountdown(parent, to, timerEndMessage) {
 
   // Определяем конечную дату
   if (typeof to === 'string') {
-    toCountDate = new Date(to); // если передана строка (дата)
+    toCountDate = new Date(to);
+    const currentDate = new Date();
+    while (toCountDate < currentDate) {
+      toCountDate.setFullYear(toCountDate.getFullYear() + 1);
+    }
   } else if (typeof to === 'number') {
     toCountDate = new Date(Date.now() + to * 1000); // если передано количество секунд
   } else {

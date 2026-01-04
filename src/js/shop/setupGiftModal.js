@@ -29,6 +29,6 @@ export default function setupGiftModal(products) {
     modalSubtitle.className = `popup-card__subtitle ${getCategoryColor(product.category)}`;
     modalDescription.textContent = product.description;
 
-    modalImage.src = `assets/img/third-best/${imgIndex}.png`;
+    modalImage.src = `img/third-best/${imgIndex}.png`;
   });
 }
